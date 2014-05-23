@@ -2,7 +2,12 @@
 
 //Variables
 
-//Outline
+//Clearfix
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 //Main layout
@@ -11,16 +16,17 @@ body{
 }
 
 .main{
-	background-color: white;
-	margin: 110px 0 0 0;
-	padding: 0 0 0 100px;
+	background: white;
+	margin-top: 110px;
 	min-width: 1200px;
-	height: 500px;
+	padding-left: 100px;
+	min-height: 500px;
+	position: relative;
 }
 
-// .ryu{
-// 	float:left;
-// }
+.ryu{
+	float:left;
+}
 
 //Getting Ryu and Hadouken ready
 
@@ -28,12 +34,12 @@ body{
   background-repeat: no-repeat;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing{
+.ryu-ready, .ryu-still, .ryu-throwing , .ryu-cool{
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing{
+.ryu-ready, .ryu-throwing , .ryu-cool{
 	display: none;
 }
 
@@ -50,13 +56,17 @@ body{
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
 .hadouken {
-  background-image: url('../images/hadouken.gif');
-  width: 156px; 
-  height: 90px;
-  position: relative;
-   top: -316px;
-  left: 520px;
-  display: none;
-  float: left;
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	top: -337px;
+	left: 500px;
+	float: left;
 }
