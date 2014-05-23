@@ -64,10 +64,6 @@ body {
   height: 500px;
 }
 
-.ryu {
-  float: left;
-}
-
 .hadouken, .ryu {
   background-repeat: no-repeat;
 }
