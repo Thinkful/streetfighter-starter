@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	Entrance();
 	GoRyu();
 });
 
@@ -24,7 +25,12 @@ function playPose () {
 }
 
 // Ryu Function
-
+function Entrance(){
+	$('body').addClass('animated fadeIn');
+	$('#down').addClass('animated bounceInDown');
+	$('.ryu').addClass('animated fadeInLeft');
+	$('.guide').addClass('animated bounceInUp');
+}
 function GoRyu () {
 	//when user hover over
 	$('.ryu').mouseenter(function() {
