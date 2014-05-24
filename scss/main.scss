@@ -1,0 +1,95 @@
+@import "reset";
+@import "animate";
+
+//Variables
+
+//Clearfix
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+//Main layout
+body{
+	font-family:arial, sans-serif;
+background: url('../images/bg-arena.gif') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main{
+	margin-top: 110px;
+	min-width: 1200px;
+	padding-left: 100px;
+	min-height: 500px;
+	position: relative;
+}
+
+.ryu{
+	float:left;
+}
+
+//Getting Ryu and Hadouken ready
+
+.hadouken, .ryu {
+  background-repeat: no-repeat;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing , .ryu-cool{
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing , .ryu-cool{
+	display: none;
+}
+
+//Ryu
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken {
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	top: -337px;
+	left: 500px;
+	float: left;
+}
+
+.sf{
+background-image: url('../images/sf-logo.png');
+width: 682px;
+height: 300px;
+position:relative;
+left: 600px;
+}
+
+.guide{
+
+	position: absolute;
+	left:800px;
+	top:400px;
+	//text-align:center;
+	color:white;
+	font-size: 1.8em;
+}
