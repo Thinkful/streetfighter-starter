@@ -1,0 +1,78 @@
+body {
+	background-color: black;
+}
+
+p {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.main {
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+}
+
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	top: 167px;
+	left: 475px;
+	float: left;
+
+}
+
+.ryu {
+	float: left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool {
+	display: none;
+}
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.ryu-ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	background-repeat: no-repeat;
+}
+
+
+
+.logo {
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+	margin-top: 1em;
+}
+
+.instructions {
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+	margin-top: 3em
+}
