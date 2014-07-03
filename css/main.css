@@ -1,0 +1,53 @@
+/* General & Container */
+
+body { background-color: black; }
+
+.container {
+	background-color: white;
+	margin-top: 50px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+}
+
+
+/* Directions */
+
+.intro { float: right; padding: 100px 100px 0 0; }
+.heading { font-size: 2em; }
+
+
+/* Ryu */
+
+.fighter { float: left; }
+.ready, .still, .throwing, .cool { width: 659px; height: 494px; }
+.ready, .throwing, .cool { display: none; }
+
+.ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.throwing {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ready, .still, .throwing, .cool { background-repeat: no-repeat; }
+
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px; 
+	height: 90px;
+	display: none;
+	position: relative;
+	top: 170px;
+	left: 434px;
+	float: left;
+}
