@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>jQuery Streetfighter Project</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
+	<div class="container">
+		<div class="intro">
+			<p class="heading">Instructions:</p>
+			<p>Click on Ryu to see his attack move.</p>
+			<p>Hit the 'x' key when you want to see how cool he can be.</p>
+		</div>
+		<div class="fighter">
+			<div class="ready"></div>
+			<div class="still"></div>
+			<div class="throwing"></div>
+			<div class="cool"></div>
+			<div class="hadouken"></div>
+		</div>
+	</div>
+	<div class="hidden">
+		<audio class="soundclip_throwing" src="sound/hadouken.mp3">
+	</div>
 </body>
 </html>
