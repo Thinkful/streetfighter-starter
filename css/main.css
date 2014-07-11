@@ -33,16 +33,19 @@ ul {
 
 li {
 	display: inline-block;
-	padding-right: 30px;
+	padding-right: 45px;
+
 	font-family: Arial, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #EEEEEE;
 	text-align: center;
+	
 }
+
 .main {
 	background-color: white;
-	margin-top: 100px;
+	margin-top: 60px; /* change back to 60px*/
 	padding-left: 100px;
 	min-width: 1200px;
 	height: 500px;
