@@ -1,0 +1,148 @@
+/* {outline: red 1px solid;}*/
+
+@font-face {
+  font-family: kaushan;
+  src: url('../kaushan-script/KaushanScript-Regular.otf');
+}
+
+.presents {
+  position: absolute;
+  font-family: kaushan;
+  font-size: 90px;
+  margin-left: 370px;
+  display: none;
+  top: 290px;
+}
+
+.jquery-logo {
+  background-image: url('../images/jQuery.png');
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 172px;
+  top: 200px;
+  margin-left: 270px;
+}
+
+.sf-logo {
+  background-image: url('../images/StreetFighter.png');
+  position: absolute;
+  width: 682px;
+  height: 314px;
+  margin-left: 200px;
+  top: 170px;
+  z-index: 11;
+  display:none;
+}
+
+
+
+
+.instruct {
+  position: absolute;
+  font-family: kaushan;
+  font-size: 30px;
+  top: 160px;
+  margin-left: 585px;
+  display: none;
+}
+
+.instruct p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+
+}
+
+
+
+body {
+  background-color: black;
+}
+ 
+.main {
+  background-color: white;
+  margin-top: 110px;
+  min-width: 1200px;
+  padding-left: 100px;
+  height: 500px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.beach {
+ background-image: url('../images/beach2.jpg');
+ margin-left: -100px;
+ width: 1500px;
+ height: 500px;
+ z-index: 1;
+ display: none;
+ top: -500px;
+}
+
+.cover {
+  background-color: black;
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  top: 615px;
+  z-index:15;
+
+}
+ 
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-16bit, .ryu-cool {
+  background-repeat: no-repeat;
+  z-index: 3;
+} 
+
+  
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: relative;
+  top: 167px;
+  left: -212px;
+  z-index: 4;
+} 
+ 
+.ryu {
+  float: left;
+  z-index: 3;
+}
+ 
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-16bit {
+  width: 659px;
+  height: 494px;
+  display: none;
+}
+ 
+
+ 
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-16bit {
+  background-image: url('../images/16bit.gif');
+  width: 490px;
+  height: 512px;
+  float: left;
+  position: relative;
+  top: 20px;
+  left: 35px;
+}
+ 
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+ 
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
