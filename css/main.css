@@ -1,0 +1,60 @@
+body {
+  background: url('../images/tile.jpg');
+  background-repeat: repeat;
+}
+
+.main {
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+}
+
+.mega {
+  float: left;
+}
+
+.haduken {
+  float: left;
+}
+
+.mega-ready, .mega-still, .mega-throwing {
+  width: 480px;
+  height: 500px;
+}
+
+.mega-ready, .mega-throwing {
+  display: none;
+} 
+
+.mega-ready {
+  background-image: url('../images/megaman-running.gif');
+}
+
+.mega-still {
+  background-image: url('../images/megaman_001.jpg');
+}
+
+.mega-throwing {
+  background-image: url('../images/megaman_002.jpg');
+}
+
+.haduken, .mega-ready, .mega-still, .mega-throwing {
+  background-repeat: no-repeat;
+}
+
+.haduken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  position: relative;
+  top: 185px;
+  left: 363px;
+  float: left;
+}
+
+
+
+
