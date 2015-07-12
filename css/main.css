@@ -1,0 +1,132 @@
+body {
+
+background-color: black;
+
+}
+
+
+.main {
+background-color: white;
+margin-top: 110px;
+padding-left: 100px;
+min-width: 1200px;
+height: 500px;
+position: relative;
+z-index: 1;
+/*outline: red 1px solid;*/
+}
+
+.ryu{
+
+float: left;
+}
+
+.ryu{
+
+width: 659px;
+height: 494px;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing {
+
+width: 659px;
+height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+
+display: none;	
+}
+
+.ryu-cool {
+
+background-image: url('http://i.imgur.com/DWLZjl0.gif?1');
+
+}
+.ryu-ready {
+
+background-image: url('http://i.imgur.com/H7hkttP.gif');
+}
+
+.ryu-still {
+
+background-image: url('http://i.imgur.com/6higRjK.png?1');	
+}
+
+.ryu-throwing {
+
+background-image: url('http://i.imgur.com/Smi5Lz0.png?1');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+
+	background-repeat: no-repeat;
+}
+
+.hadouken {
+background-image: url('http://i.imgur.com/6gqTmEl.gif?1');
+width: 156px;
+height: 90px;
+display: none;
+float: left;
+position: absolute;
+z-index: 10;
+top: 170px;
+left: 650px;
+float: left;
+}
+
+.text-content {
+position: absolute;
+left: 650px;
+height: 425px;
+width: 600px;
+padding-top: 75px;
+}
+
+.sf-logo {
+background-image: url('http://i.imgur.com/EXj27Sj.png');
+width: 682px;
+height: 314px;
+display: none;
+}
+
+.jquery-logo {
+
+background-image: url('http://i.imgur.com/R38fauo.png?1');
+background-repeat: none;
+width: 300px;
+height: 135px;
+display: none;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.brought-by, .how-to{
+display: none;
+color: Magenta;
+font-family: Impact;
+font-size: 50px;
+width: 600px;
+}
+
+.brought-by{
+text-align: center;
+margin-top: 100px;
+}
+
+
+.how-to p {
+width: 50%;
+color: black;
+font-size: 24px;
+line-height: 45px;
+
+}
+
+
+.how-to p + p {
+margin-left: 275px;
+
+}
