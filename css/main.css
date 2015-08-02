@@ -15,4 +15,6 @@ body {
 }
 .fireball img {
   margin: 165px 182px 200px 425px;
+  display: none;
+  position: absolute;
 }
