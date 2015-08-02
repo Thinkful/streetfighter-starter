@@ -3,9 +3,10 @@ $(document).ready(function() {
       $( this ).css('background-image', 'url("/images/ryu-ready-position.gif")')},
       function() {
           $( this ).css('background-image', 'url("/images/ryu-standing-still.png")')});
-  $('.fighter').mousedown(function() {
-            $( this ).css('background-image', 'url("/images/ryu-throwing-hadouken.png")')});
 
+  $('.fighter').mousedown(function() {
+            $( this ).css('background-image', 'url("/images/ryu-throwing-hadouken.png")')}).mouseup(function() {
+              $( this ).css('background-image', 'url("/images/ryu-standing-still.png")')});
 
 
 
