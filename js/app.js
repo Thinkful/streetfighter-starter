@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.fighter').hover(
     function() {
-      $( this ).css('background-image', 'url("../images/ryu-ready-position.gif")');
+      $( this ).css('background-image', 'url("/images/ryu-ready-position.gif")');
     },
     function() {
       $( this ).css('background-image', 'url("../images/ryu-standing-still.png")');
@@ -23,7 +23,7 @@ $(document).ready(function() {
       $('.fighter').css('background-image', 'url("../images/ryu-cool.gif")');
     }
   }).keyup(function() {
-    $('.fighter').css('background-image', 'url("../images/ryu-standing-still.png")');
+    $('.fighter').css('background-image', 'url("images/ryu-standing-still.png")');
   });
 
 
