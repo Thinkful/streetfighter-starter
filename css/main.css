@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+.main {
+  background-color: white;
+  height: 500px;
+  margin: 150px auto 300px auto;
+}
+.fighter {
+  margin: 0 0 0 50px;
+  background-image: url('/images/ryu-standing-still.png');
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+}
