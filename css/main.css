@@ -58,3 +58,29 @@ background-image: url('../images/ryu-throwing-hadouken.png');
   top: 167px;
   left: 520px;
 }
+
+.text {
+	width: 600px;
+	height: 450px;
+	position: absolute;
+	top: 50px;
+	left: 700px;
+}
+
+.logo {
+	background-image: url('../images/sf-logo.png');
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 200px;
+	display: none;
+}
+
+.instr {
+	font-family: exo;
+	font-weight: 600;
+	font-size: 28px;
+	width: 50%;
+	line-height: 50px;
+	color: red;
+	display: none;
+}

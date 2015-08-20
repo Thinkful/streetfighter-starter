@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	intro();
+
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -9,8 +11,9 @@ $(document).ready(function(){
 	})
 	.mousedown(function(){
 		// play hadouken sound
-		playHadouken ();
+		playHadouken();
 		$('.ryu-ready').hide();
+		$('.ryu-still').hide(); //Added to remove duplicate image 
 		$('.ryu-throwing').show();
 
 		// show hadouken and animate it to the right of the screen
@@ -26,28 +29,40 @@ $(document).ready(function(){
 	})
 	.mouseup(function(){
 		$('.ryu-throwing').hide();
-		$('.ryu-still').show();
+		$('.ryu-ready').show();
 		// ryu goes back to his ready position
 		// hadouken needs to show for animation
 		});
 
-	$(document).keydown(function(x){
-		if(x.keyCode == 88){
+	$(document).keydown(function(e){
+		if(e.keyCode == 88){
 			$('.ryu-ready').hide();
+			$('.ryu-still').hide(); //Removes duplicate image below
 			$('.ryu-cool').show();
 		}
 	})
-	.keyup(function(x){
-		if(x.keyCode == 88){
+	.keyup(function(e){
+		if(e.keyCode == 88){
 			$('.ryu-cool').hide();
 			$('.ryu-still').show();
 		}
 	})
 });
 
- //Load sound for ryu-throw
-  function playHadouken () {
-  $('#hadouken-sound')[0].volume = 0.5;
-  $('#hadouken-sound')[0].load();
-  $('#hadouken-sound')[0].play();
+//Load sound for ryu-throw
+function playHadouken(){
+	$('#hadouken-sound')[0].volume = 0.5;
+	$('#hadouken-sound')[0].load();
+	$('#hadouken-sound')[0].play();
 }
+
+//Load logo and text
+function intro() {
+  $('.logo').fadeIn(3500, function() {
+    $(this).fadeOut(1000, function() {
+        $('.instr').fadeIn(2000, function() {
+        	$(this).fadeOut(7000);
+        	});
+       })	
+  	})
+}	
