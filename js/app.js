@@ -58,11 +58,11 @@ function playHadouken(){
 
 //Load logo and text
 function intro() {
+  $('#theme-song')[0].volume = 0.3;
+  $('#theme-song')[0].play();
   $('.logo').fadeIn(3500, function() {
     $(this).fadeOut(1000, function() {
-        $('.instr').fadeIn(2000, function() {
-        	$(this).fadeOut(7000);
-        	});
+        $('.instr').fadeIn(2000);
        })	
   	})
 }	
