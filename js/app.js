@@ -21,12 +21,17 @@ $(document).ready(function() {
 				$(this).css('left', '520px');
 			});
 	})
-	.mouseup(function(){
+	.mouseup(function() {
         $('.ryu-throwing').hide();
         $('.ryu-ready').show();
     });
-
+	//.keydown(function() {
+		//$('.ryu').hide();
+		//$('.ryu-cool').show();
+	//});
    });
+
+
 
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
