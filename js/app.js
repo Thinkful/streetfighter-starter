@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  playtheme();
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
@@ -30,3 +31,20 @@ function playHadouken () {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+  $(document).keydown(function(e) {
+    if (e.keyCode == 88) {
+      $('.ryu-still').hide();
+      $('.ryu-cool').show();
+    }  
+  }).keyup(function(e) {
+    if (e.keyCode == 88) {
+      $('.ryu-cool').hide();
+      $('.ryu-still').show();
+    }
+  });
+function playtheme () {
+  $('#groovin-tunes')[0].volume = 0.1;
+  $('#groovin-tunes')[0].load();
+  $('#groovin-tunes')[0].play();
+}
+
