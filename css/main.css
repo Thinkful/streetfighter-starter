@@ -1,0 +1,136 @@
+
+
+body{
+
+	background-color: black;
+}
+
+.main {
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-container{
+   font-size:2em;
+  display: inline-block;
+  width: 541px;
+  height: 500px;
+  font-family: 'Bangers', cursive;
+
+}
+
+.intro-container > .intro-message{
+
+  padding-top:50px;
+}
+
+.intro-message,.personal-intro{
+  text-align: center;
+  color: #F03302;
+  position: relative;
+  right: 250px;
+  display: none;
+  
+}
+
+.TBC{
+  top:150px;
+  right: 460px;
+  position: absolute;
+  font-size: 3em;
+  z-index: 1000;
+  display: none;
+
+}
+
+.ken{
+  right: 200px;
+  padding-top:25px;
+  position: absolute;
+  width:280px;
+  display: none;
+  z-index: 100;
+
+}
+
+.intro-instructions{
+  text-align: center;
+  position: absolute;
+  color:red;
+  padding: 50px 200px 0 0;
+  display:none;
+}
+
+.jquery-logo, .thinkful-logo{
+  padding-top: 30px;
+  position: relative;
+  right: 250px;
+  display: none;
+}
+
+.jquery-logo{
+  width: 300px;
+  padding-bottom: 50px;
+}
+
+.thinkful-logo{
+  width: 200px;
+
+
+}
+
+
+.ryu {
+  position: relative;
+  right: 200px;
+    float:left;
+    width: 659px;
+    height: 494px;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing,.ryu-cool{
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, .ryu-throwing,.ryu-cool {
+  display: none;
+} 
+
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool{
+
+  background-image:url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+  background-repeat: no-repeat;
+}
+
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: absolute;
+  z-index: 10;
+  top: 167px;
+  left: 520px;
+}
