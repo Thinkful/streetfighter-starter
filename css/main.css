@@ -46,15 +46,11 @@ body {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
   height: 90px;
-  /*display: none;*/
+  display: none;
   float: left;
   position: absolute;
   z-index: 10;
-  left: 641px;
+  left: 520px;
   top: 170px;
 
-}
-
-* {
-  outline: red 1px solid;
 }
