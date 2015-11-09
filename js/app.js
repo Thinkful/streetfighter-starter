@@ -24,10 +24,23 @@ $(document).ready(function() {
 			function(){
 				$(this).hide();
 				$(this).css('left','524px');
-			});
+	});
 	})
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+	});
+
+	$(window).keydown(function(keypress){
+		if(keypress.keyCode==88)
+		{
+			$('.ryu-still,.ryu-ready').hide();
+
+			$('.ryu-cool').show();
+		}
+	})
+	$(window).keyup(function(){
+		$('.ryu-still').show();
+		$('.ryu-cool').hide();
 	});
 });
